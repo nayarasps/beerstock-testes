@@ -20,9 +20,6 @@ public class SwaggerConfig {
     private static final String BASE_PACKAGE = "one.digitalinnovation.beerstock.controller";
     private static final String API_TITLE = "Beer Stock API";
     private static final String API_DESCRIPTION = "REST API for beer stock management";
-    private static final String CONTACT_NAME = "Rodrigo Peleias";
-    private static final String CONTACT_GITHUB = "https://gtihub.com/rpeleias";
-    private static final String CONTACT_EMAIL = "rodrigo.peleis@gmail.com";
 
     @Bean
     public Docket api() {
@@ -39,7 +36,6 @@ public class SwaggerConfig {
                 .title(API_TITLE)
                 .description(API_DESCRIPTION)
                 .version("1.0.0")
-                .contact(new Contact(CONTACT_NAME, CONTACT_GITHUB, CONTACT_EMAIL))
                 .build();
     }
 }
